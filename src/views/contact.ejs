@@ -1,0 +1,14 @@
+<%- include('partials/header', { pageTitle: 'Contact Us' }) %>
+
+<main>
+  <h1>Contact Us</h1>
+  <p>Thank you for your kindness</p>
+  <p>Please feel free to contact me</p>
+  <ul>
+    <% contacts.forEach(contact => { %> <%# Individual contact info %>
+    <li><%= contact %></li>
+    <% }) %>
+  </ul>
+</main>
+
+<%- include('partials/footer') %>
